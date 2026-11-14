@@ -21,7 +21,7 @@
 
 ## 方針
 
-- 既存OSS（[Open Steward](https://github.com/kawamurashingo/open-steward)、[CPAN Rescue](https://github.com/kawamurashingo/cpan-rescue)、[JQ-Lite](https://github.com/kawamurashingo/JQ-Lite)）は技術実績として提示し、OSS利用そのものを有料化しない。
+- OSS活動の実績は [CPAN Rescue](https://cpan-rescue.com/) と [JQ-Lite](https://kawamurashingo.github.io/JQ-Lite/) の公式ホームページで紹介する。重複する独立した「Open Steward」OSSプロジェクトは実績一覧から外し、OSS利用そのものを有料化しない。
 - 販売対象は企業に提供する調査・診断・作業・支援。OSSに一般化できる修正は、適切な権利・守秘義務・ライセンスの範囲で還元を検討する。
 - 最初の30日は大型受託よりも、**誰が・何に・なぜ支払うか**を検証する。
 - 単価や月額保守は仮説。顧客の反応と工数で見直す。
