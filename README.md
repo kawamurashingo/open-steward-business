@@ -8,6 +8,16 @@
 **Status:** 検証中 / 2026-11-15 時点の公開用初期計画  
 **First milestone:** 2026-12-15までに「Perl / CPAN 保守リスク診断（55,000円・税込、試験価格）」を1件有償受注する。
 
+## ホームページ（GitHub Pages）
+
+企業向けの日本語ホームページを `docs/index.html` に作成しました。公開設定はまだ確認できていません。
+
+- [ホームページのHTML](docs/index.html)
+- [サイト公開の設定手順](SITE_SETUP.md)
+- 公開後のURL（想定）: `https://kawamurashingo.github.io/open-steward-business/`
+
+GitHubの **Settings → Pages** で `Deploy from a branch`、`main /docs` を選んで公開します。稼働確認できるまでは「公開済み」とは扱いません。
+
 ## 方針
 
 - 既存OSS（[Open Steward](https://github.com/kawamurashingo/open-steward)、[CPAN Rescue](https://github.com/kawamurashingo/cpan-rescue)、[JQ-Lite](https://github.com/kawamurashingo/JQ-Lite)）は技術実績として提示し、OSS利用そのものを有料化しない。
