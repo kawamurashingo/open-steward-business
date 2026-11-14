@@ -3,7 +3,7 @@
 - **期限:** 2026-11-26
 - **種別:** ヒアリング
 - **初期状態:** Todo
-- **GitHub Issue:** [#5](../issues/5)
+- **GitHub Issue:** [#5](https://github.com/kawamurashingo/open-steward-business/issues/5)
 
 ## 完了条件
 
