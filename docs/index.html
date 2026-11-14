@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b21">
+  <meta name="description" content="既存Perlシステムの依存関係・互換性・テスト/CIを調査し、保守リスクと優先順位を整理する小規模診断。Open Stewardによる試験サービス、55,000円（税込）。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="Perl / CPAN 保守リスク診断 | Open Steward">
+  <meta property="og:description" content="そのPerlシステムを、壊さず次につなぐ。依存関係・テスト・互換性の現状を調べ、実行可能な保守計画へ。">
+  <meta property="og:site_name" content="Open Steward">
+  <meta property="og:url" content="https://kawamurashingo.github.io/open-steward-business/">
+  <link rel="canonical" href="https://kawamurashingo.github.io/open-steward-business/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/main.js"></script>
+  <title>Perl / CPAN 保守リスク診断 | Open Steward</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Open Steward トップ">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mark-inner"></span></span>
+        <span class="brand-name">OPEN <strong>STEWARD</strong><small>PERL MAINTENANCE</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+        <a href="#problems">課題</a>
+        <a href="#service">診断内容</a>
+        <a href="#price">料金</a>
+        <a href="#about">私たちについて</a>
+        <a class="nav-contact" href="#contact">お問い合わせ <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> BUILT TO LAST. NOT JUST TO RUN.</div>
+          <h1 id="hero-title">そのPerlシステムを、<br><em>壊さず</em>次につなぐ。</h1>
+          <p class="hero-lead">長年動き続けるPerlシステム。更新や引き継ぎの前に、まず「何が分かっていて、どこにリスクがあるか」を明らかにしませんか。</p>
+          <p class="hero-sub">CPAN依存関係・互換性・テスト/CIを調べ、根拠のある保守計画をまとめる小規模診断サービスです。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">診断について相談する <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#service">サービス内容を見る <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="status-light"></span> 初回顧客向けの試験サービスとしてご相談を受付中</div>
+        </div>
+        <div class="hero-panel" aria-label="診断レポートのイメージ">
+          <div class="panel-top">
+            <span class="mono">DIAGNOSTIC / PREVIEW</span>
+            <span class="panel-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          </div>
+          <div class="panel-body">
+            <div class="report-label"><span class="line-square"></span> MAINTENANCE REPORT <span class="report-version">v0.2</span></div>
+            <h2>何を、どの順番で<br>守るべきか。</h2>
+            <div class="signal-list">
+              <div><span class="signal-icon">01</span><span>Dependencies</span><span class="signal-tag">把握する</span></div>
+              <div><span class="signal-icon">02</span><span>Compatibility</span><span class="signal-tag">確かめる</span></div>
+              <div><span class="signal-icon">03</span><span>Tests &amp; CI</span><span class="signal-tag">整える</span></div>
+              <div><span class="signal-icon">04</span><span>Action plan</span><span class="signal-tag">優先する</span></div>
+            </div>
+            <div class="panel-footer"><span class="tiny-star" aria-hidden="true">✳</span> EVIDENCE OVER ASSUMPTION <span class="small-dash"></span></div>
+          </div>
+          <p class="panel-caption">※ 表示は診断項目のイメージです。実際の顧客データではありません。</p>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="container"><span>CREATE</span><span class="slash">/</span><span>RESCUE</span><span class="slash">/</span><span>SUSTAIN</span><span class="line"></span><span class="bottom-text">OPEN SOFTWARE, LONG-TERM THINKING.</span></div></div>
+    </section>
+
+    <section class="section section-light" id="problems" aria-labelledby="problems-title">
+      <div class="container">
+        <div class="section-kicker"><span class="section-index">01</span><span>THE CHALLENGE</span></div>
+        <div class="section-intro">
+          <h2 id="problems-title">動いているからこそ、<br><em>見えにくいリスク</em>がある。</h2>
+          <p>今すぐ書き換える必要がなくても、現状を説明できないこと自体が次の変更を難しくします。</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card"><div class="problem-symbol" aria-hidden="true">⌁</div><div class="card-num">01 / DEPENDENCIES</div><h3>依存関係が分からない</h3><p>どのCPANモジュールを、どのバージョンで使っているのか。更新や再構築に必要な情報が散らばっている。</p></article>
+          <article class="problem-card"><div class="problem-symbol" aria-hidden="true">⊞</div><div class="card-num">02 / TESTABILITY</div><h3>変更しても確かめられない</h3><p>テストやCIが整っておらず、Perl・OSの更新や小さな修正でも影響範囲を判断しづらい。</p></article>
+          <article class="problem-card"><div class="problem-symbol" aria-hidden="true">↗</div><div class="card-num">03 / CONTINUITY</div><h3>保守を引き継ぎにくい</h3><p>当時の判断や実行環境が残っていない。担当者が変わると、何から調べるべきか分からない。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="service" aria-labelledby="service-title">
+      <div class="container">
+        <div class="section-kicker kicker-dark"><span class="section-index">02</span><span>WHAT YOU GET</span></div>
+        <div class="section-intro">
+          <h2 id="service-title">まずは、<em>把握する。</em><br>それから、手を打つ。</h2>
+          <p>初回診断では実装や改修を急がず、判断に必要な情報を整理します。</p>
+        </div>
+        <div class="deliverables">
+          <div class="deliverable"><span class="deliverable-count">01</span><div><h3>依存関係の整理</h3><p>確認できたモジュール・ディストリビューション、バージョン、情報源、未確認事項を一覧にします。</p></div><span class="deliverable-arrow" aria-hidden="true">↗</span></div>
+          <div class="deliverable"><span class="deliverable-count">02</span><div><h3>保守リスクの可視化</h3><p>互換性や保守状況の懸念を、根拠・影響・優先度とともに整理します。推測と事実を区別します。</p></div><span class="deliverable-arrow" aria-hidden="true">↗</span></div>
+          <div class="deliverable"><span class="deliverable-count">03</span><div><h3>テスト・CIの改善案</h3><p>既存の検証手段と環境再現性を確認し、これから整えるべき点を具体化します。</p></div><span class="deliverable-arrow" aria-hidden="true">↗</span></div>
+          <div class="deliverable"><span class="deliverable-count">04</span><div><h3>優先度付き保守計画</h3><p>すぐに着手すること、追加調査すべきこと、別途改修が必要なことを分けたロードマップをお渡しします。</p></div><span class="deliverable-arrow" aria-hidden="true">↗</span></div>
+        </div>
+        <div class="deliverable-note"><span aria-hidden="true">↗</span> <a href="sample-diagnostic-report.md">診断レポートのひな形を見る</a> <span>（架空の例で、納品実績ではありません）</span></div>
+      </div>
+    </section>
+
+    <section class="section process-section" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-kicker"><span class="section-index">03</span><span>HOW IT WORKS</span></div>
+        <div class="section-intro">
+          <h2 id="process-title">小さく始めて、<br><em>確かな次の一手</em>へ。</h2>
+          <p>システムを止めずに、調査できる範囲から進めます。</p>
+        </div>
+        <ol class="process-grid">
+          <li><span class="step-count">STEP 01</span><h3>事前相談</h3><p>困りごと、Perlの環境、対象規模を確認。最初の連絡では機密情報は不要です。</p></li>
+          <li><span class="step-count">STEP 02</span><h3>範囲の合意</h3><p>対象・料金・納期・守秘条件・資料の受け渡し方法を取り決めます。</p></li>
+          <li><span class="step-count">STEP 03</span><h3>限定した診断</h3><p>許可されたコードや資料を中心に調査。実行テストは合意した隔離環境でのみ。</p></li>
+          <li><span class="step-count">STEP 04</span><h3>報告・説明</h3><p>調査の根拠と制約を含む報告書を納品し、次の保守対応を説明します。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="price" aria-labelledby="price-title">
+      <div class="container">
+        <div class="section-kicker"><span class="section-index">04</span><span>PILOT OFFER</span></div>
+        <div class="pricing-layout">
+          <div class="pricing-copy"><h2 id="price-title">最初の一歩は、<br><em>明確な範囲</em>から。</h2><p>大規模な改修を依頼する前に、調査対象を絞った診断で、いま必要な判断材料を揃えます。</p><div class="pricing-caption">初回顧客向けの試験価格です。市場相場・採算・実績を保証するものではありません。</div></div>
+          <div class="price-card">
+            <div class="price-top"><span class="price-flag">PILOT / TRIAL OFFER</span><span>01 DIAGNOSTIC</span></div>
+            <div class="price-label">Perl / CPAN 保守リスク診断</div>
+            <div class="price-value"><span class="currency">¥</span>55,000<span class="tax">税込</span></div>
+            <div class="price-divider"></div>
+            <dl class="price-details">
+              <div><dt>対象</dt><dd>1リポジトリ / 1実行環境</dd></div>
+              <div><dt>直接依存</dt><dd>20件程度まで</dd></div>
+              <div><dt>深掘りする論点</dt><dd>最大5項目</dd></div>
+              <div><dt>標準作業枠</dt><dd>合計6時間以内</dd></div>
+              <div><dt>納期目安</dt><dd>条件確定後5営業日程度</dd></div>
+              <div><dt>納品</dt><dd>報告書＋30分以内の説明</dd></div>
+            </dl>
+            <a class="button button-primary button-full" href="#contact">この内容について相談する <span aria-hidden="true">↗</span></a>
+            <p class="price-footnote">対象の難易度・資料の状態により、範囲の縮小や別見積もりをご提案する場合があります。追加費用は事前合意なく発生しません。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light notes-section" aria-labelledby="notes-title">
+      <div class="container notes-grid">
+        <div><div class="section-kicker"><span class="section-index">05</span><span>IMPORTANT NOTES</span></div><h2 id="notes-title">できることと、<br><em>できないこと。</em></h2><p>診断の価値は、判断できる情報を増やすことです。実施しないことや確認できないことも明確にお伝えします。</p></div>
+        <div class="notes-panel"><h3>この診断に含まれないもの</h3><ul>
+          <li>本番環境の変更、運用代行、緊急復旧・24時間対応</li>
+          <li>アプリケーション改修、依存ライブラリの修正・更新、CI修復の実装</li>
+          <li>侵入テスト、網羅的な脆弱性診断、監査・認証</li>
+          <li>無停止運用、脆弱性ゼロ、完全な互換性の保証</li>
+          <li>合意範囲を超える複数システム・環境の網羅調査</li>
+        </ul><p class="notes-small">未確認事項は報告書に記載します。追加調査・改修は、対象と費用を別途合意したうえで対応を検討します。</p></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-kicker"><span class="section-index">06</span><span>ABOUT OPEN STEWARD</span></div>
+        <div class="about-layout">
+          <div><h2 id="about-title">ソフトウェアを、<br><em>長く使える資産</em>に。</h2><p>Open Stewardは、既存ソフトウェアの互換性・理解可能性・保守性を大切にするOSS活動です。コードを捨てて書き直す前に、まず既存資産を理解し、確かなテストと小さな変更で維持することを重視しています。</p><p>有料で提供するのは企業固有の診断・調査・支援。公開OSSそのものの利用を有料化するものではありません。</p></div>
+          <div class="project-links">
+            <a href="https://github.com/kawamurashingo/cpan-rescue" target="_blank" rel="noopener noreferrer"><span class="project-name">CPAN Rescue</span><span class="project-desc">CPAN保守・回帰テスト・メンテナー育成</span><span class="project-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://github.com/kawamurashingo/JQ-Lite" target="_blank" rel="noopener noreferrer"><span class="project-name">JQ-Lite</span><span class="project-desc">純Perlの軽量JSON処理ツール</span><span class="project-arrow" aria-hidden="true">↗</span></a>
+            <a href="https://github.com/kawamurashingo/open-steward" target="_blank" rel="noopener noreferrer"><span class="project-name">Open Steward</span><span class="project-desc">長く維持できるソフトウェアのための活動</span><span class="project-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="about-disclaimer">※上記は公開OSS活動の紹介です。企業向け有料診断サービスの納品実績を示すものではありません。</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div><div class="section-kicker kicker-dark"><span class="section-index">07</span><span>LET'S TALK</span></div><h2 id="contact-title">まずは、いまの<br><em>困りごと</em>を聞かせてください。</h2><p>「古いPerlシステムをどう保守すべきか分からない」「調査だけ外部に相談したい」。そんな段階からでもご相談いただけます。</p><a class="button button-contact" href="https://www.linkedin.com/in/shingo-kawamura-20452443" target="_blank" rel="noopener noreferrer">LinkedInで問い合わせる <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-side"><h3>最初のご連絡で教えてほしいこと</h3><ol><li>どのような保守課題で困っているか</li><li>対象のおおよその規模とPerlバージョン</li><li>相談したい時期や希望納期</li></ol><div class="privacy-note"><span aria-hidden="true">◎</span><p>秘密情報・ソースコード・ログ・認証情報・個人情報は、初回メッセージや公開GitHub Issueに記載しないでください。資料の授受や守秘条件は個別に確認します。</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#top">OPEN <strong>STEWARD</strong></a><div class="footer-links"><a href="service-offer.md">詳細仕様</a><a href="https://github.com/kawamurashingo/open-steward-business" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#top">トップへ ↑</a></div><small>© <span id="year">2026</span> Open Steward. Built for software worth keeping.</small></div></footer>
+</body>
+</html>
