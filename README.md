@@ -2,7 +2,7 @@
 
 > 既存のPerlシステムを安全に維持するための診断・保守サービスを、実際の顧客課題から育てる。
 
-**企業・開発チーム向け:** [Perl / CPAN 保守リスク診断 — サービス案内](SERVICE.md)（試験価格55,000円・税込）  
+**企業・開発チーム向け:** [Perl / CPAN 保守リスク診断 — ホームページ](https://kawamurashingo.github.io/open-steward-business/)（試験価格55,000円・税込）  
 **お問い合わせ:** [LinkedIn](https://www.linkedin.com/in/shingo-kawamura-20452443)（機密情報は最初の連絡に含めないでください）  
 
 **Status:** 検証中 / 2026-11-15 時点の公開用初期計画  
@@ -10,13 +10,14 @@
 
 ## ホームページ（GitHub Pages）
 
-企業向けの日本語ホームページを `docs/index.html` に作成しました。公開設定はまだ確認できていません。
+企業向けの日本語ホームページはGitHub Pagesにデプロイされました。
 
-- [ホームページのHTML](docs/index.html)
-- [サイト公開の設定手順](SITE_SETUP.md)
-- 公開後のURL（想定）: `https://kawamurashingo.github.io/open-steward-business/`
+- **[ホームページを開く](https://kawamurashingo.github.io/open-steward-business/)**
+- [サイトソース（HTML）](docs/index.html)
+- [公開設定・表示確認手順](SITE_SETUP.md)
+- [GitHub Pagesの成功したデプロイ](https://github.com/kawamurashingo/open-steward-business/actions/runs/43654075009)
 
-GitHubの **Settings → Pages** で `Deploy from a branch`、`main /docs` を選んで公開します。稼働確認できるまでは「公開済み」とは扱いません。
+**公開状態:** GitHub Actionsのビルド・デプロイは2026-11-15（日本時間）に成功。外部ブラウザでのページ表示・モバイル表示の最終確認は未実施です。
 
 ## 方針
 
@@ -30,7 +31,7 @@ GitHubの **Settings → Pages** で `Deploy from a branch`、`main /docs` を�
 **Perl / CPAN 保守リスク診断** — 55,000円（税込・試験価格）  
 対象: 小規模な1システム、または限定したモジュール群。  
 納品: 依存関係一覧、保守・互換性リスク、テスト/CI改善案、優先度付き保守計画。  
-**まずはこちら:** [企業向けサービス案内](SERVICE.md)  
+**まずはこちら:** [企業向けホームページ](https://kawamurashingo.github.io/open-steward-business/) / [文章版サービス案内](SERVICE.md)  
 詳細: [サービス仕様](docs/service-offer.md) / [レポートひな形](docs/sample-diagnostic-report.md) / [事前確認シート](docs/intake-checklist.md)
 
 ## KPI（初期30日）
