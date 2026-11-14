@@ -3,7 +3,7 @@
 - **期限:** 2026-11-20
 - **種別:** 商品設計
 - **初期状態:** Todo
-- **GitHub Issue:** [#2](../issues/2)
+- **GitHub Issue:** [#2](https://github.com/kawamurashingo/open-steward-business/issues/2)
 
 ## 完了条件
 
