@@ -1,5 +1,7 @@
 # 公式ホームページの公開設定（GitHub Pages）
 
+**公開処理の状態（2026-11-15確認）:** `main /docs` のPagesデプロイは[GitHub Actionsで成功](https://github.com/kawamurashingo/open-steward-business/actions/runs/43654075009)しました。GitHubが提示したURL: **https://kawamurashingo.github.io/open-steward-business/**。外部からの表示およびモバイル実機確認は未完了です。
+
 ホームページの静的ファイルは **[docs/index.html](docs/index.html)** と **[docs/assets/](docs/assets/)** にあります。
 
 ## GitHub Pages を有効化する
@@ -13,7 +15,7 @@
 
 **https://kawamurashingo.github.io/open-steward-business/**
 
-設定するまではURLが表示されない、または404になる可能性があります。URLを公開したと扱うのは、ページが実際に表示できてからにしてください。
+GitHubでのデプロイ完了は確認できています。実際の表示・リンク・端末ごとの挙動はブラウザで確認してください。
 
 ## 公開確認チェックリスト
 
